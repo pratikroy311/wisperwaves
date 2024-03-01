@@ -1,0 +1,7 @@
+openapi: 3.0.3
+info:
+  title: wisperwaves
+  version: 1.0.0
+  description: WhisperWaves is a support chat application built using Django
+paths: {}
+components: {}
