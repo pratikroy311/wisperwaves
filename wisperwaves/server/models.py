@@ -21,7 +21,7 @@ class Server(models.Model):
         related_name='server_category'
         )
     description = models.CharField(max_length=250,null=True,blank=True)
-    memeber = models.ManyToManyField(settings.AUTH_USER_MODEL)
+    member = models.ManyToManyField(settings.AUTH_USER_MODEL)
     
     
     def __str__(self):
