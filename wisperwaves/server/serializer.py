@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from server.models import Server, Channel
 
-class ChannelSerializer(serializers.Serializer):
+class ChannelSerializer(serializers.ModelSerializer):
     """
     Serializer for Channel model.
     """
@@ -25,7 +25,7 @@ class ServerSerializer(serializers.ModelSerializer):
         """
         model = Server
         exclude = ('member',)  # Exclude 'member' field from serialization.
-        fields = '__all__'  # Serialize all fields of Server model.
+        # fields = '__all__'  # Serialize all fields of Server model.
 
     def get_num_members(self, obj):
         """
